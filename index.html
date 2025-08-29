@@ -109,6 +109,63 @@
             </div>
         </section>
 
+        <!-- Importando CSS e JS do Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Importando CSS e JS do Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Seção Carrossel -->
+<section id="galeria" class="text-center mb-16">
+  <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Galeria de Imagens</h2>
+  
+  <div class="swiper max-w-4xl mx-auto rounded-2xl shadow-lg">
+    <!-- Wrapper das imagens -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="foto1.jpg" alt="Imagem 1" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto2.jpg" alt="Imagem 2" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto3.jpeg" alt="Imagem 3" class="w-full rounded-2xl">
+      </div>
+      <div class="swiper-slide">
+        <img src="foto4.jpeg" alt="Imagem 4" class="w-full rounded-2xl">
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação (bolinhas) -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Inicialização do Swiper -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true, // volta para o início
+    autoplay: {
+      delay: 3000, // muda de imagem a cada 3 segundos
+      disableOnInteraction: false, // continua passando mesmo se clicar nas setas
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
         <!-- Seção de Programação com cards detalhados -->
         <section id="programacao" class="text-center mb-16">
             <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Programação do Festejo</h2>
@@ -206,142 +263,112 @@
             </div>
         </section>
 
-        <!-- Seção Novena das Rosas -->
-        <section id="novena" class="text-center mb-16">
-            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Novena das Rosas</h2>
-            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg max-w-3xl mx-auto">
-                <p class="text-lg text-gray-700 mb-6">
-                    A Novena das Rosas é um caminho de fé e confiança em Deus, inspirado no amor de Santa Teresinha, que prometeu espalhar uma chuva de rosas sobre o mundo. Junte-se a nós nesta oração e deixe que sua vida seja perfumada pela graça divina.
-                </p>
-                
-                <!-- Conteúdo de cada dia da novena -->
-                <!-- 1º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">1º dia – Santa Teresinha doutora e amante da Igreja</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pelos que exercem o ministério sacerdotal, pela santificação do Clero e pelas intenções do coração do Santo Padre.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 2º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">2º dia – Santa Teresinha padroeira das missões</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pelos missionários espalhados no mundo inteiro e suas necessidades espirituais e materiais.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
+<!-- Seção Novena das Rosas -->
+<section id="novena" class="text-center mb-16">
+    <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Novena das Rosas</h2>
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg max-w-4xl mx-auto text-left">
 
-                <!-- 3º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">3º dia – Santa Teresinha que teve uma vida de sacrifícios pelas almas</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pelos Cristãos que são perseguidos e martirizados por sua fidelidade e amor a Cristo.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 4º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">4º dia – Santa Teresinha que viveu em uma família santa</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pela união e santificação das famílias.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 5º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">5º dia – Santa Teresinha padroeira dos jovens</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pelos jovens do Projeto Juventude para Jesus e pela juventude do mundo inteiro</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
+        <!-- Ladainha -->
+        <h3 class="text-2xl font-bold text-pink-700 mb-4" style=text-align:center>LADAINHA</h3>
+        <div class="bg-rose-100 rounded-lg p-6 mb-6">
+            <p class="text-gray-700 mb-2">Senhor, tende piedade de nós.<br>
+            Jesus Cristo, tende piedade de nós.<br>
+            Senhor, tende piedade de nós.<br>
+            Jesus Cristo, ouvi-nos.<br>
+            Jesus Cristo, atendei-nos.</p>
 
-                <!-- 6º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">6º dia – Santa Teresinha que foi curada pelo sorriso de Maria</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos pelos que sofrem de depressão, pelos que vivem oprimidos e sem sentido de vida.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 7º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">7º dia – Santa Teresinha apaixonada por Jesus</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos para que todos tenham um coração inflamado de amor a Cristo.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 8º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">8º dia – Santa Teresinha próxima dos prisioneiros</h3>
-                    <p class="text-gray-700 mb-4">Neste dia rezemos por todos os encarcerados e pelos que se encontram presos em si mesmo, pelo pecado.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- 9º dia -->
-                <div class="bg-rose-100 rounded-lg p-6 mb-6 text-left">
-                    <h3 class="text-xl font-bold text-pink-700 mb-3">9º dia – Santa Teresinha solidária aos incrédulos</h3>
-                    <p class="text-gray-700 mb-4">Neste último dia da Novena de Santa Teresinha, rezemos pelos que não creem, não esperam e não confiam em Deus.</p>
-                    <p class="text-gray-700 font-semibold mb-2">Oração:</p>
-                    <p class="text-gray-700 mb-4">Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).</p>
-                    <p class="text-gray-700 mb-4">Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.</p>
-                    <p class="text-gray-700 mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
-                    <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.” Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
-                    <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
-                    <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
-                </div>
-                
-                <!-- Formulário para intenção de oração -->
-                <div class="mt-8">
-                    <h3 class="text-xl font-bold text-pink-700 mb-4">Envie sua Intenção de Oração</h3>
-                    <textarea class="w-full h-32 p-4 mb-4 rounded-lg border-2 border-pink-200 focus:outline-none focus:border-pink-500 transition-colors" placeholder="Escreva sua intenção aqui..."></textarea>
-                    <button class="bg-dourado text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
-                        Enviar Intenção
-                    </button>
-                </div>
-            </div>
-        </section>
+            <p class="text-gray-700 mb-2">Deus, Pai do Céu, tende piedade de nós.<br>
+            Deus Filho, que nos remistes, tende piedade de nós.<br>
+            Deus Santificador, tende piedade de nós.<br>
+            Trindade Santa, um só Deus, tende piedade de nós.</p>
+
+            <p class="text-gray-700 mb-2">Teresinha do Cristo Menino, Teresinha rogai por nós.<br>
+            Casta flor do jardim do Carmelo, Teresinha rogai por nós.<br>
+            Meiga esposa de Jesus amante, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Serva humilde do Rei do universo, Teresinha rogai por nós.<br>
+            Grande ouvinte do Verbo encarnado, Teresinha rogai por nós.<br>
+            Eterna amante de Cristo adorado, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Mestra insígnia da pequena via, Teresinha rogai por nós.<br>
+            Ó devota da Sagrada Face, Teresinha rogai por nós.<br>
+            Ó modelo de amor dedicado, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">Clara guia das singelas almas, Teresinha rogai por nós.<br>
+            Luz suave no seio da Igreja, Teresinha rogai por nós.<br>
+            Grande exemplo de fé e esperança, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+
+            <p class="text-gray-700 mb-2">O modelo de confiança em Deus, Teresinha rogai por nós.<br>
+            Intercessora dos sacerdotes, Teresinha rogai por nós.<br>
+            Padroeira das santas missões, Teresinha rogai por nós.<br>
+            Serva de Deus e amiga dos homens, Teresinha rogai por nós.</p>
+
+            <p class="text-gray-700 font-semibold">Rogai por nós, rogai por nós.<br>
+            Teresinha, rogai por nós.</p>
+        </div>
+
+        <!-- Oração -->
+        <h3 class="text-2xl font-bold text-pink-700 mb-4" style=text-align:center>ORAÇÃO</h3>
+        <div class="bg-rose-100 rounded-lg p-6 mb-6">
+            <p class="text-gray-700 mb-4">
+                Santíssima Trindade: Pai, Filho e Espírito Santo: eu vos agradeço por todas as graças com que enriqueceste a vida de vossa serva, Santa Teresinha do Menino Jesus e da Sagrada Face, nestes 24 anos que passou na terra. 
+                E pelos méritos de tão querida santinha, concedei-me a graça que ardentemente vos peço … (faça aqui o pedido), se for conforme a Vossa Santíssima Vontade e para a salvação de minha alma (ou da pessoa por quem está rezando).
+            </p>
+            <p class="text-gray-700 mb-4">
+                Ajudai minha fé e minha esperança, Santa Teresinha, cumprindo mais uma vez vossa promessa de que ficareis no Céu a fazer o bem na terra, permitindo que eu ganhe um rosa em sinal de que alcançarei a graça pedida.
+            </p>
+
+            <p class="text-gray-700 font-semibold mb-2">Em seguida rezar 24 vezes, por cada ano de Santa Teresinha na terra:</p>
+            <p class="text-gray-700 font-bold mb-2">“Glória ao Pai, ao Filho e ao Espírito Santo como era no princípio, agora e sempre. Amém.”<br>
+            Santa Teresinha do Menino Jesus e da Sagrada Face, rogai por mim (ou o nome da pessoa por quem está intercedendo).</p>
+
+            <p class="text-gray-700 font-semibold mt-4">Para finalizar rezar:</p>
+            <p class="text-gray-700">1 Ave-Maria e 1 Pai-Nosso.</p>
+        </div>
+
+        <!-- Hino -->
+        <h3 class="text-2xl font-bold text-pink-700 mb-4" style=text-align:center>HINO</h3>
+        <div class="bg-rose-100 rounded-lg p-6">
+            <p class="text-gray-700 mb-4">
+                <span class="font-semibold">1.</span> Quando ela nasceu sentiram de rosas um cheiro bom, <br>
+                todos os jardins refloriram na cidade de Alesson, <br>
+                rosas foram seus brinquedos e sua doce alegria, <br>
+                rosas colhidas bem cedo para Jesus e Maria. <br><br>
+
+                No céu sua mão formosa, Jesus o bom jardineiro,<br>
+                confiou no canteiro das rosas o seu mais belo canteiro,<br>
+                e as almas angustiosas bradão na terra santinha,<br>
+                Teresinha nos manda rosas, rosas, rosas Teresinha.
+            </p>
+
+            <p class="text-gray-700 mb-4">
+                <span class="font-semibold">2.</span> Quando ela entrou no Carmelo, o seu jardim refloriu,<br>
+                tomou um aspecto tão belo como jamais ninguém viu,<br>
+                rosas foram pressurosas sem cessar em profusão,<br>
+                todos recebem suas rosas e lhe dão o coração.
+            </p>
+
+            <p class="text-gray-700">
+                <span class="font-semibold">3.</span> E de rosas perfumosas tão cheio o canteiro está,<br>
+                que quanto mais saem rosas, mais rosas o jardim dá,<br>
+                dar rosas todo ano sem cessar em profusão,<br>
+                é um mistério arcano, rosas inverno e verão.
+            </p>
+        </div>
+    </div>
+</section>
 
        <!-- Seção 30 Dias com Santa Teresinha -->
 <section id="trinta-dias" class="text-center mb-16">
@@ -404,10 +431,10 @@
                     <div class="text-left">
                         <h3 class="text-2xl font-bold text-gray-800 mb-4" style="text-align: center;">Cardápio das Noites</h3>
                         <ul class="text-gray-700 list-disc list-inside" style="text-align: center;">
-                            <li>Churrasco e espetinhos ------------------- <span class="font-bold text-dourado">R$ 15,00</span></li>
-                            <li>Pastel e salgados diversos ------------------- <span class="font-bold text-dourado">R$ 5,00</span></li>
-                            <li>Bolo e doces típicos ------------------- <span class="font-bold text-dourado">R$ 8,00</span></li>
-                            <li>Refrigerantes e sucos ------------------- <span class="font-bold text-dourado">R$ 7,00</span></li>
+                            <li>Churrasco e espetinhos ------------ <span class="font-bold text-dourado">R$ 15,00</span></li>
+                            <li>Pastel e salgados diversos ------------ <span class="font-bold text-dourado">R$ 5,00</span></li>
+                            <li>Bolo e doces típicos ------------ <span class="font-bold text-dourado">R$ 8,00</span></li>
+                            <li>Refrigerantes e sucos ------------ <span class="font-bold text-dourado">R$ 7,00</span></li>
                         </ul>
                     </div>
                     <!-- Seção de Atrações -->
@@ -418,48 +445,9 @@
                         <p class="text-gray-700" style="text-align: center;"><strong>30/09:</strong> Bingo e sorteio de prêmios.</p>
                     </div>
                 </div>
-                <!-- Galeria de momentos sociais -->
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Momentos Fraternos</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Culinária+1" alt="Momento social 1" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Música+ao+vivo" alt="Momento social 2" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Comunidade+reunida" alt="Momento social 3" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
-                </div>
             </div>
         </section>
 
-        <!-- Seção Galeria -->
-        <section id="galeria" class="text-center mb-16">
-            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Galeria de Fotos e Vídeos</h2>
-            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
-                <!-- Álbum Festejo Atual -->
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Festejo Atual</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Festa+2024" alt="Foto do festejo 1" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Fieis+rezando" alt="Foto do festejo 2" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Procissão" alt="Foto do festejo 3" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Parte+Social" alt="Foto do festejo 4" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                </div>
-                <!-- Álbum Anos Anteriores -->
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Anos Anteriores</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Festejo+2023" alt="Festejo 2023 1" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Festejo+2022" alt="Festejo 2022 2" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Momento+marcante" alt="Momento marcante" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x300/FEE2E2/9F1239?text=Comunidade+2022" alt="Comunidade 2022" class="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer">
-                </div>
-                <!-- Vídeos -->
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Vídeos Especiais</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="relative pb-[56.25%] h-0"> <!-- 16:9 Aspect Ratio -->
-                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="relative pb-[56.25%] h-0">
-                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/A_y8m111m_0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Seção de História -->
         <section id="historia" class="text-center mb-16">
@@ -483,47 +471,51 @@
 
         <!-- Seção de Contato & Redes -->
         <section id="contato" class="text-center mb-16">
-            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Contato & Redes Sociais</h2>
+            <h2 class="text-3xl sm:text-5xl dancing-script text-pink-700 mb-8">Endereço e Redes Sociais</h2>
             <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg max-w-lg mx-auto">
                 <p class="text-lg text-gray-700 mb-6">
-                    Fique por dentro de tudo! Siga-nos e compartilhe essa alegria.
+                    Fique por dentro de tudo! Siga-nos em nossas redes sociais.
                 </p>
                 <!-- Formulário de Contato -->
                 <div class="mb-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Entre em Contato</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" class="w-full p-3 mb-3 rounded-lg border-2 border-pink-200 focus:outline-none focus:border-pink-500 transition-colors">
-                        <input type="email" placeholder="Seu e-mail" class="w-full p-3 mb-3 rounded-lg border-2 border-pink-200 focus:outline-none focus:border-pink-500 transition-colors">
-                        <textarea placeholder="Sua mensagem" class="w-full h-24 p-3 mb-3 rounded-lg border-2 border-pink-200 focus:outline-none focus:border-pink-500 transition-colors"></textarea>
-                        <button type="submit" class="bg-dourado text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-yellow-600 transition-colors">
-                            Enviar Mensagem
-                        </button>
-                    </form>
-                </div>
-                <p class="text-lg text-gray-700 mb-4">
-                    <strong>Endereço da Paróquia:</strong><br>
-                    Rua das Rosas, 123 - Centro<br>
-                    Cidade da Fé, Estado
-                </p>
-                <!-- Links e botão de compartilhamento -->
-                <div class="flex flex-col items-center gap-4">
-                    <div class="flex justify-center space-x-6">
-                        <a href="#" target="_blank" class="text-4xl text-gray-600 hover:text-blue-500 transition-colors">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-4xl text-gray-600 hover:text-pink-500 transition-colors">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-4xl text-gray-600 hover:text-green-500 transition-colors">
-                            <i class="fab fa-whatsapp-square"></i>
-                        </a>
-                    </div>
-                    <button id="shareButton" class="bg-pink-500 text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-pink-600 transition-colors inline-flex items-center">
-                        <i class="fas fa-share-alt mr-2"></i>
-                        Compartilhar Site
-                    </button>
-                </div>
-            </div>
+                    <!-- Seção de Contato & Redes -->
+<section id="contato" class="text-center mb-16">
+        <p class="text-lg text-gray-700 mb-4">
+        <strong>Endereço da Paróquia:</strong><br>
+        Avenida Santa Teresinha, Setor Santa Teresinha<br>
+        Araguaína Tocantins
+    </p>
+
+    <!-- Botão Localização -->
+    <a href="https://maps.app.goo.gl/HPi3dNjm7rRCTtLMA?g_st=aw" target="_blank"
+       class="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-green-700 transition-colors inline-flex items-center">
+        <i class="fas fa-map-marker-alt mr-2"></i>
+        Ver no Mapa
+    </a>                    
+</div>
+
+               <!-- Links e botão de compartilhamento -->
+<div class="flex flex-col items-center gap-4">
+    <div class="flex justify-center space-x-6">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=61567897415728" target="_blank" class="text-4xl text-gray-600 hover:text-blue-500 transition-colors">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/perpetuosocorroaux?igsh=MWVrcGt5MXcxOWlvZQ==" target="_blank" class="text-4xl text-gray-600 hover:text-pink-500 transition-colors">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+5563992885129" target="_blank" class="text-4xl text-gray-600 hover:text-green-500 transition-colors">
+            <i class="fab fa-whatsapp-square"></i>
+        </a>
+        <!-- Site -->
+        <a href="https://anaraqueldasilva73-lang.github.io/Site-Festejo/" target="_blank" class="text-4xl text-gray-600 hover:text-purple-500 transition-colors">
+            <i class="fas fa-globe"></i>
+        </a>
+    </div>
+
+</div>
         </section>
 
     </main>
@@ -534,29 +526,6 @@
     </footer>
 
     <script>
-        // Lógica para o menu retrátil em mobile
-        const menuToggle = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('is-open');
-        });
-
-        // Lógica para o botão de compartilhamento
-        document.getElementById('shareButton').addEventListener('click', () => {
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Festejo de Santa Teresinha',
-                    text: 'Venha celebrar conosco o Festejo de Santa Teresinha!',
-                    url: window.location.href,
-                }).catch(error => console.log('Erro ao compartilhar:', error));
-            } else {
-                // Fallback para dispositivos que não suportam a API Share
-                const shareText = "Festejo de Santa Teresinha: Venha celebrar conosco! " + window.location.href;
-                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
-                window.open(whatsappUrl, '_blank');
-            }
-        });
 
         // Lógica para a geração de reflexão com a API do Gemini
         document.getElementById('generate-reflection-btn').addEventListener('click', async () => {
